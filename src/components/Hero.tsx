@@ -16,16 +16,24 @@ export function Hero() {
           </div>
           <div className="flex-1 relative">
             <img
-              src="./Foto_Inicio.svg"
+              src="./Foto_Inicio.webp"
               alt="Professional with laptop"
               className="w-full max-w-xl mx-auto"
             />
             {/* Floating Elements */}
             <div className="absolute top-32  right-0 animate-float-delayed">
-              <img  src="./Abstract_Hashtag.svg" alt="" className="w-15 h-15" />
+              <img  
+                src="./Abstract_Hashtag.svg" 
+                alt="" 
+                className="w-15 h-15" 
+              />
             </div>
             <div className="absolute top-48 bottom-0 left-0 animate-float">
-              <img src="./Abstract_Hashtag.svg" alt="" className="w-15 h-15" />
+              <img 
+                src="./Abstract_Hashtag.svg" 
+                alt="" 
+                className="w-15 h-15" 
+              />
             </div>
           </div>
         </div>

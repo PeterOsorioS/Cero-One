@@ -20,7 +20,7 @@ export function Support() {
           </div>
           <div className="flex-1 relative">
             <img
-              src="Necesitas_Ayuda.svg"
+              src="Necesitas_Ayuda.webp"
               alt="Support representative"
               className="w-full max-w-3xl sm:max-w-4xl lg:max-w-5xl mx-auto"
             />
