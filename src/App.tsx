@@ -11,7 +11,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#111111] text-white">
+    <div className="min-h-screen  bg-[#111111] text-white">
       <Header />
       <main>
         <Hero />
