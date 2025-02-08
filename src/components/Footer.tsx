@@ -9,7 +9,7 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Síguenos</h3>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
               <a href="#" className="text-gray-400 hover:text-white">
                 Instagram
               </a>

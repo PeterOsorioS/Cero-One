@@ -2,7 +2,7 @@ import { Button } from "./ui/Button"
 
 export function Support() {
   return (
-    <section className="py-20">
+    <section className="p-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 ">
           <div className="flex-1 m-5 lg:m-10 mt-0">

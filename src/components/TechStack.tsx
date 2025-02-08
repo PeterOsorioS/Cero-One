@@ -8,7 +8,7 @@ const technologies = [
 
 export function TechStack() {
   return (
-    <section className="py-20">
+    <section className="p-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-8">
           {technologies.map((tech, index) => (
