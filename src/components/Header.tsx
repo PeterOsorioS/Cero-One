@@ -7,7 +7,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-20 bg-[#111111]/80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 px-24 bg-[#111111]/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center">
