@@ -6,7 +6,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: "red" | "white" |  "dark-red"
 }
 
-export function Button({ children, variant = "square", color = "red", className, ...props }: ButtonProps) {
+export function Button({ children = "Hola mundo", variant = "square", color = "red", className, ...props }: ButtonProps) {
 
   const colorClasses = {
     "red": "bg-[#E63946] hover:bg-[#A12831] text-white",
@@ -15,7 +15,7 @@ export function Button({ children, variant = "square", color = "red", className,
   };
 
   const variantClasses = {
-    "square": "rounded-md",
+    "square": "rounded-none",
     "rounded": "rounded-full",
     "semi-rounded": "rounded-lg",
   };

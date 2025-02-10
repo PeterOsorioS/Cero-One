@@ -2,7 +2,7 @@ import { Button } from "./ui/Button"
 
 export function Support() {
   return (
-    <section className="p-20">
+    <section className="lg:p-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 ">
           <div className="flex-1 m-5 lg:m-10 mt-0">
@@ -16,6 +16,8 @@ export function Support() {
             <div className="flex flex-wrap justify-center lg:justify-normal gap-4">
               <Button variant="semi-rounded" color="dark-red">Contactar soporte</Button>
               <Button variant="semi-rounded" color="white">Cancelar soporte</Button>
+              <Button variant="rounded" color="red">Cancelar soporte</Button>
+              <Button></Button>
             </div>
           </div>
           <div className="flex-1 relative">
