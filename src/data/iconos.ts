@@ -23,7 +23,7 @@ export const icons_tech : icon[] = [
 
     // 🔹 Bases de Datos
     { name: "MongoDB", image: "/icons/MongoDB.svg" },
-    { name: "MariaDB", image: "/icons/MariaDB.svg" },
+    { name: "MariaDB", image: "/icons/MariaDb.svg" },
     { name: "PostgreSQL", image: "/icons/PostgreSQL.svg" },
     { name: "Oracle", image: "/icons/Oracle.svg" },
 
