@@ -22,7 +22,7 @@ export function Header() {
             <a href="#" className="text-white border-b-2 border-[#E63946] w-16 hover:text-[#E63946] transition-colors">
               Inicio
             </a>
-            <a href="#" className="text-white hover:text-red-500 w-16 transition-colors">
+            <a href="#Contacto" className="text-white hover:text-red-500 w-16 transition-colors">
               Nosotros
             </a>
             <a href="#" className="text-white hover:text-red-500 w-16 transition-colors">

@@ -6,7 +6,7 @@ export function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
-    <section className="py-20">
+    <section className="py-20" id="Contacto">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-2">

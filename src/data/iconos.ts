@@ -2,8 +2,8 @@ import { icon } from "../types/index";
 
 export const icons_tech : icon[] = [
     // 🔹 Lenguajes de Programación
-    { name: "Java", image: "./src/assets/icons/Java.svg" },
-    { name: "Python", image: "./src/assets/icons/Python.svg" },
+    { name: "Java", image: "../src/assets/icons/Java.svg" },
+    { name: "Python", image: "../src/assets/icons/Python.svg" },
     { name: "JavaScript", image: "./src/assets/icons/JavaScript.svg" },
     { name: "TypeScript", image: "./src/assets/icons/TypeScript.svg" },
     { name: "Kotlin", image: "./src/assets/icons/Kotlin.svg" },
