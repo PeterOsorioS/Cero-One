@@ -1,61 +1,94 @@
-import { Button } from "./ui/Button"
+import { useRef } from "react";
+import { Button } from "./ui/Button";
+import { sendEmail } from "../lib/emailJS";
 
 export function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+
   return (
-    <section className="lg:p-20">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1">
+          <div className="flex-2">
             <img
               src="./Contactanos.svg"
               alt="Contact representative"
-              className="w-full max-w-lg mx-auto"
+              className="w-full max-w-2xl mx-auto"
             />
           </div>
-          <div className="flex-1">
-            <h2 className="text-3xl font-bold mb-8">Contáctanos</h2>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Nombre
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 bg-[#1A1A1A] rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
-                />
+          <div className="flex-1 w-full  bg-[#1A1A1A] p-5 rounded-2xl">
+            <h2 className="text-3xl font-bold mb-8 text-center">Contáctanos</h2>
+            <form
+              ref={formRef}
+              onSubmit={(e) => sendEmail(e, formRef)}
+              className="space-y-6"
+            >
+              <div className="grid md:grid-cols-2 gap-3  text-start">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium mb-2 "
+                  >
+                    Nombre
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className=" ps-3 w-full py-2 border-1  border-white bg-[#1A1A1A] rounded-lg focus:ring-1 focus:ring-red-500 outline-none"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium mb-2"
+                  >
+                    Correo
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="ps-3 w-full py-2  border-1  border-white bg-[#1A1A1A] rounded-lg focus:ring-1 focus:ring-red-500 outline-none"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                </div>
               </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Correo
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 bg-[#1A1A1A] rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
+
+              <div className=" text-start">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium mb-2"
+                >
                   Asunto
                 </label>
                 <input
                   type="text"
                   id="subject"
-                  className="w-full px-4 py-2 bg-[#1A1A1A] rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
+                  name="subject"
+                  className="w-full px-4 py-2 mb-2 border-1  border-white bg-[#1A1A1A] rounded-lg focus:ring-1 focus:ring-red-500 outline-none"
+                  placeholder="Asunto de tu mensaje"
+                  required
                 />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium my-2 "
+                >
                   Mensaje
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
-                  className="w-full px-4 py-2 bg-[#1A1A1A] rounded-lg focus:ring-2 focus:ring-red-500 outline-none"
+                  className="w-full px-4 py-2  border-1  border-white bg-[#1A1A1A] rounded-lg focus:ring-1 focus:ring-red-500 outline-none"
+                  placeholder="Asunto de tu mensaje"
+                  required
                 ></textarea>
               </div>
-              <Button variant="semi-rounded" color="white" className="w-full">
+              <Button variant="semi-rounded" color="white" className="lg:flex items-start">
                 Enviar Mensaje
               </Button>
             </form>
@@ -63,6 +96,5 @@ export function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

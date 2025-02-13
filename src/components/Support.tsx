@@ -16,8 +16,6 @@ export function Support() {
             <div className="flex flex-wrap justify-center lg:justify-normal gap-4">
               <Button variant="semi-rounded" color="dark-red">Contactar soporte</Button>
               <Button variant="semi-rounded" color="white">Cancelar soporte</Button>
-              <Button variant="rounded" color="red">Cancelar soporte</Button>
-              <Button></Button>
             </div>
           </div>
           <div className="flex-1 relative">
