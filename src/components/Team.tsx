@@ -1,8 +1,10 @@
 const team = [
-  { name: "Peter Osorio", role: "Jefe Desarrollo", image: "/papi.png" },
+  { name: "Peter Osorio", role: "Desarrollador", image: "/papi.png" },
   { name: "Octavio Reyna", role: "CEO", image: "/octa.png" },
-  { name: "Gabriel Cervantes", role: "QA Tester", image: "/gaby.png" },
-  { name: "Noel Moreno", role: "Project Manager", image: "/Noel2.png" },
+  { name: "Gabriel Cervantes", role: "Desarrollador", image: "/gaby.png" },
+  { name: "Noel Moreno", role: "Desarrollador", image: "/Noel2.png" },
+  { name: "Javier Blanco", role: "Desarrollador", image: "/Noel.png" },
+
 ];
 export function Team() {
   return (
@@ -10,7 +12,7 @@ export function Team() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4">Nuestro Equipo</h2>
         <p className="text-gray-400 mb-12">
-          En Zero One, contamos con un equipo de líderes, comprometidos y
+          En Cero One, contamos con un equipo de líderes, comprometidos y
           dispuestos a dar lo mejor de sí en cada proyecto.
         </p>
 
