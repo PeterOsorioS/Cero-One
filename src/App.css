@@ -50,7 +50,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-260px*4));
+    transform: translateX(calc(-260px*5));
   }
 }
 
@@ -58,7 +58,7 @@
 .slide-track {
   display: flex;
   gap: 20px;
-  width: calc(200px * 8); 
+  width: calc(200px * 10); 
   animation: scroll 10s  linear infinite;
 }
 

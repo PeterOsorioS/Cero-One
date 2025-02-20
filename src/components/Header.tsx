@@ -22,14 +22,16 @@ export function Header() {
             <a href="#" className="text-white border-b-2 border-[#E63946] w-16 hover:text-[#E63946] transition-colors">
               Inicio
             </a>
-            <a href="#Contacto" className="text-white hover:text-red-500 w-16 transition-colors">
+            <a href="#Nosotros" className="text-white hover:text-red-500 w-16 transition-colors">
               Nosotros
             </a>
             <a href="#" className="text-white hover:text-red-500 w-16 transition-colors">
               Servicios
             </a>
           </div>
-          <Button className="hidden md:flex" variant="rounded" color="red">Contáctanos</Button>
+          <a href="#Contacto">
+            <Button className="hidden md:flex" variant="rounded" color="red">Contáctanos</Button>
+          </a>
 
           {/* Mobile Navigation Button */}
           <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>

@@ -1,4 +1,6 @@
 import emailjs from "@emailjs/browser";
+import { toast } from 'react-toastify';
+
 
 export function sendEmail(e: React.FormEvent<HTMLFormElement>, formRef: React.RefObject<HTMLFormElement | null>) {
     e.preventDefault();
@@ -12,7 +14,7 @@ export function sendEmail(e: React.FormEvent<HTMLFormElement>, formRef: React.Re
   emailjs
     .sendForm(serviceID, templateID, formRef.current, publicKey)
     .then(() => {
-      alert("¡Correo enviado con éxito!");
+      toast.success("¡Correo enviado con éxito!");
       formRef.current?.reset();
     })
     .catch((err) => {
