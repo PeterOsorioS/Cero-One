@@ -1,4 +1,4 @@
-import { CodeXml, Monitor, Smartphone, Database, Server, Cloud, Laptop  } from "lucide-react"
+import { CodeXml, Smartphone, Database, Server, Cloud, Laptop  } from "lucide-react"
 
 const services = [
   {
