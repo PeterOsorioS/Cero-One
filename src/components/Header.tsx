@@ -58,8 +58,8 @@ export function Header() {
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Servicios
               </a>
-              <a href="#Contacto">
-                <Button className="hidden md:flex" variant="rounded" color="red">Contáctanos</Button>
+              <a href="#Contacto"  className="hidden md:flex">
+                <Button variant="rounded" color="red">Contáctanos</Button>
               </a>
             </div>
           </div>
