@@ -53,6 +53,14 @@
     transform: translateX(calc(-260px*5));
   }
 }
+@keyframes Icon {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-215px*20));
+  }
+}
 
 
 .slide-track {
@@ -60,6 +68,13 @@
   gap: 20px;
   width: calc(200px * 10); 
   animation: scroll 10s  linear infinite;
+}
+
+.slide-icon-track{
+  display: flex;
+  gap: 15px;
+  width: calc(200px * 40); 
+  animation: Icon 30s  linear infinite;
 }
 
 .slide-track:hover {

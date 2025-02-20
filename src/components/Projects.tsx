@@ -1,6 +1,6 @@
 export function Projects() {
   return (
-    <section className="lg:p-20">
+    <section className="lg:p-20 pt-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4">Nuestros proyectos</h2>
         <p className="text-gray-400 mb-12">
@@ -22,12 +22,7 @@ export function Projects() {
               <p className="text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Curabitur nibh nisi, volutpat a mattis id, finibus vel felis.
-                Pellentesque consequat sit amet turpis nec mattis. Cras in
-                accumsan metus. Etiam sit amet arcu nec lectus consequat
-                facilisis. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Suspendisse potenti.
-                Nunc tempus quis augue at fermentum. Nam consectetur vulputate
-                purus ut pretium.
+                Pellentesque consequat sit amet turpis nec mattis.
               </p>
             </div>
           </div>

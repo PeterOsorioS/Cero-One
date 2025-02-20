@@ -1,13 +1,13 @@
-import { Code, Monitor, Smartphone, Database, Server, Cloud } from "lucide-react"
+import { CodeXml, Monitor, Smartphone, Database, Server, Cloud, Laptop  } from "lucide-react"
 
 const services = [
   {
-    icon: <Code className="w-10 h-10" />,
+    icon: <CodeXml className="w-10 h-10" />,
     title: "Desarrollo web",
     description: "Creamos sitios web modernos y responsivos utilizando las últimas tecnologías.",
   },
   {
-    icon: <Monitor className="w-10 h-10" />,
+    icon: <Laptop className="w-10 h-10" />,
     title: "Aplicación de Escritorio",
     description: "Desarrollamos aplicaciones para escritorio que optimizan sus procesos.",
   },

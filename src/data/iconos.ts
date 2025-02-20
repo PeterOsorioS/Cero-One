@@ -11,7 +11,7 @@ export const icons_tech : icon[] = [
     // 🔹 Frameworks y Librerías Frontend
     { name: "React", image: "/icons/React.svg" },
     { name: "Vue.js", image: "/icons/VueJs.svg" },
-    { name: "AngularJS", image: "/icons/AngularJS.svg" },
+    { name: "Angular", image: "/icons/Angular.svg" },
     { name: "Blazor", image: "/icons/Blazor.svg" },
     { name: "TailwindCSS", image: "/icons/TailwindCSS.svg" },
     { name: "Bootstrap", image: "/icons/Bootstrap5.svg" },

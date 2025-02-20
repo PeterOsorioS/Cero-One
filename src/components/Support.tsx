@@ -2,12 +2,12 @@ import { Button } from "./ui/Button"
 
 export function Support() {
   return (
-    <section className="lg:p-20">
+    <section className="lg:p-20 pt-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 ">
           <div className="flex-1 m-5 lg:m-10 mt-0">
             <h2 className="text-3xl font-bold text-center  lg:text-start mb-10">¿Necesitas ayuda inmediata?</h2>
-            <p className="text-gray-400   mb-8 text-start">
+            <p className="text-gray-400 text-center   mb-8 md:text-start">
               Nuestro equipo de soporte está disponible 24/7 para
               ayudarte con cualquier problema técnico. Ofrecemos
               soluciones integrales de soporte IT para mantener tu

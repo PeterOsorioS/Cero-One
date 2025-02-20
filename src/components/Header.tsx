@@ -6,6 +6,13 @@ import { Button } from "./ui/Button"
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleCloseMenu = ( e: React.MouseEvent<HTMLDivElement> ) => {
+    const target = e.target as HTMLElement;
+    if ( target.closest("a") || target.closest("button") ) {
+          setIsOpen(false)
+    }
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 lg:px-24 bg-[#111111]/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
@@ -48,7 +55,7 @@ export function Header() {
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden pt-4 pb-2">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4" onClick={handleCloseMenu}>
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Inicio
               </a>
@@ -58,7 +65,7 @@ export function Header() {
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Servicios
               </a>
-              <a href="#Contacto"  className="hidden md:flex">
+              <a href="#Contacto" className="md:hidden flex justify-center">
                 <Button variant="rounded" color="red">Contáctanos</Button>
               </a>
             </div>

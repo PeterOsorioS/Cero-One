@@ -8,8 +8,8 @@ const team = [
 ];
 export function Team() {
   return (
-    <section className="lg:p-20" id="Nosotros">
-      <div className="container mx-auto px-4">
+    <section className="lg:p-20 pt-20" id="Nosotros">
+      <div className="container mx-auto px-4 m-5">
         <h2 className="text-3xl font-bold mb-4">Nuestro Equipo</h2>
         <p className="text-gray-400 mb-12">
           En Cero One, contamos con un equipo de líderes, comprometidos y
