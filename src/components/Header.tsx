@@ -52,15 +52,15 @@ export function Header() {
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Inicio
               </a>
-              <a href="#" className="text-white hover:text-red-500 transition-colors">
+              <a href="#Nosotros" className="text-white hover:text-red-500 transition-colors">
                 Nosotros
               </a>
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Servicios
               </a>
-              <Button variant="rounded" color="red" className="w-full">
-                Contáctanos
-              </Button>
+              <a href="#Contacto">
+                <Button className="hidden md:flex" variant="rounded" color="red">Contáctanos</Button>
+              </a>
             </div>
           </div>
         )}
