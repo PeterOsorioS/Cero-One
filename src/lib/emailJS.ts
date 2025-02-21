@@ -9,7 +9,7 @@ export function sendEmail(e: FormEvent<HTMLFormElement>, formRef: RefObject<HTML
 
   const serviceID = "default_service";
   const templateID = "template_6q5yvq6";
-  const publicKey = "eKcV2o9NIW5mpa-L";
+  const publicKey = "eKcV2o9NIW5mpa-L0";
 
   if (!formRef.current) return;
 
