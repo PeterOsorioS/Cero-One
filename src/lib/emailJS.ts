@@ -1,13 +1,15 @@
 import emailjs from "@emailjs/browser";
+import { FormEvent, RefObject } from "react";
 import { toast } from 'react-toastify';
 
 
-export function sendEmail(e: React.FormEvent<HTMLFormElement>, formRef: React.RefObject<HTMLFormElement | null>) {
+export function sendEmail(e: FormEvent<HTMLFormElement>, formRef: RefObject<HTMLFormElement | null>) {
+
     e.preventDefault();
 
   const serviceID = "default_service";
   const templateID = "template_6q5yvq6";
-  const publicKey = "eKcV2o9NIW5mpa-L0";
+  const publicKey = "eKcV2o9NIW5mpa-L";
 
   if (!formRef.current) return;
 
@@ -17,7 +19,7 @@ export function sendEmail(e: React.FormEvent<HTMLFormElement>, formRef: React.Re
       toast.success("¡Correo enviado con éxito!");
       formRef.current?.reset();
     })
-    .catch((err) => {
-      alert("Error al enviar el correo: " + JSON.stringify(err));
+    .catch(() => {
+      toast.error("Error al enviar el correo, intentelo mas tarde.");
     });
 }

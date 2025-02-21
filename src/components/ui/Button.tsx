@@ -10,7 +10,7 @@ export function Button({ children = "Hola mundo", variant = "square", color = "r
 
   const colorClasses = {
     "red": "bg-[#E63946] hover:bg-[#A12831] text-white",
-    "white": "bg-white hover:bg-gray-100 text-black",
+    "white": "bg-white hover:bg-gray-200 text-black",
     "dark-red": "bg-[#8F232B] hover:bg-[#701C22] text-white",
   };
 

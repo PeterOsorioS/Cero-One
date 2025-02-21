@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { icons_tech } from "../data/iconos";
 
 export function TechStack() {
+  
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
+
     const handleResize = () => {
       setIsDesktop(window.innerWidth >= 1024);
     };
