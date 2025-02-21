@@ -1,37 +1,7 @@
 import { useState } from "react";
-
-// Definimos el tipo para los proyectos
-type Project = {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-}
-
-// Lista de proyectos
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Waze Plus",
-    description:
-      "Aplicación de navegación colaborativa que optimiza rutas en tiempo real para mejorar la movilidad y reducir tiempos de traslado.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    id: 2,
-    title: "E-Commerce Pro",
-    description:
-      "Plataforma de comercio electrónico escalable con integración de pagos y gestión de inventario automatizada.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-  {
-    id: 3,
-    title: "Task Manager AI",
-    description:
-      "Aplicación de gestión de tareas con inteligencia artificial que predice la mejor forma de organizar tu día.",
-    image: "/placeholder.svg?height=300&width=400",
-  },
-];
+import { projects } from "../data/projects";
+import { Project } from "../types";
+import { Button } from "./ui/Button";
 
 export function Projects() {
   // Usamos el tipo Project o null
@@ -49,7 +19,8 @@ export function Projects() {
           Nuestros Proyectos
         </h2>
         <p className="text-gray-400 mb-12 text-center max-w-2xl mx-auto">
-          Desarrollamos soluciones innovadoras que transforman la manera en que nuestros clientes hacen negocios.
+          Desarrollamos soluciones innovadoras que transforman la manera en que
+          nuestros clientes hacen negocios.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -59,7 +30,9 @@ export function Projects() {
               className="bg-[#1A1A1A] p-6 rounded-lg cursor-pointer transition-all duration-300 hover:bg-[#2A2A2A]"
               onClick={() => handleSelect(project)}
             >
-              <h3 className="text-2xl font-bold text-[#F1FAEE]">{project.title}</h3>
+              <h3 className="text-2xl font-bold text-[#F1FAEE]">
+                {project.title}
+              </h3>
             </div>
           ))}
         </div>
@@ -67,11 +40,11 @@ export function Projects() {
         {selectedProject && (
           <div className="mt-8 p-8 bg-[#1A1A1A] rounded-lg shadow-lg">
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              <div className="flex-1">
+              <div className="flex-1 flex justify-center">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full rounded-lg shadow-lg"
+                  className="w-80 rounded-lg shadow-lg hover:scale-110 duration-500 transition-transform"
                 />
               </div>
               <div className="flex-1 text-white">
@@ -81,12 +54,22 @@ export function Projects() {
                 <p className="text-gray-400 leading-relaxed">
                   {selectedProject.description}
                 </p>
-                <button
-                  className="mt-6 px-6 py-3 bg-[#E63946] text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300"
-                  onClick={() => setSelectedProject(null)}
-                >
-                  Cerrar
-                </button>
+                <div className="flex justify-center gap-2 pt-10">
+                  <a
+                    href={selectedProject.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="semi-rounded">Ver</Button>
+                  </a>
+                  <Button
+                    variant="semi-rounded"
+                    color="white"
+                    onClick={() => setSelectedProject(null)}
+                  >
+                    Cerrar
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
