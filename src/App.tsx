@@ -1,6 +1,7 @@
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { Services } from "./components/Services"
+import { ServicePlans } from "./components/Service Plans"
 import { Support } from "./components/Support"
 import { Projects } from "./components/Projects"
 import { TechStack } from "./components/TechStack"
@@ -16,6 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <Services />
+        <ServicePlans/>
         <Support />
         <Projects />
         <TechStack />
