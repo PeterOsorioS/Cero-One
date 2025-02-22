@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { projects } from "../data/projects";
-import { Project } from "../types";
+import { project } from "../types";
 import { Button } from "./ui/Button";
 
 export function Projects() {
   // Usamos el tipo Project o null
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<project | null>(null);
 
   // Definimos el tipo de project en la función
-  const handleSelect = (project: Project) => {
+  const handleSelect = (project: project) => {
     setSelectedProject(selectedProject?.id === project.id ? null : project);
   };
 

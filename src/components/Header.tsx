@@ -32,7 +32,7 @@ export function Header() {
             <a href="#Nosotros" className="text-white hover:text-red-500 w-16 transition-colors">
               Nosotros
             </a>
-            <a href="#" className="text-white hover:text-red-500 w-16 transition-colors">
+            <a href="#Servicios" className="text-white hover:text-red-500 w-16 transition-colors">
               Servicios
             </a>
           </div>

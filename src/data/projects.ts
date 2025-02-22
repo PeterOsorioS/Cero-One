@@ -1,6 +1,6 @@
-import { Project } from "../types";
+import { project } from "../types";
 
-export const projects: Project[] = [
+export const projects: project[] = [
   {
     id: 1,
     title: "Odontologia Web",
