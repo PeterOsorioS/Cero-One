@@ -5,21 +5,26 @@ import { toast } from 'react-toastify';
 
 export function sendEmail(e: FormEvent<HTMLFormElement>, formRef: RefObject<HTMLFormElement | null>) {
 
-    e.preventDefault();
+  e.preventDefault();
 
-  const serviceID = "default_service";
-  const templateID = "template_6q5yvq6";
-  const publicKey = "eKcV2o9NIW5mpa-L0";
+  const button = formRef.current?.boton
 
-  if (!formRef.current) return;
+  button.disabled = true;
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_TEMPLETE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-  emailjs
-    .sendForm(serviceID, templateID, formRef.current, publicKey)
-    .then(() => {
-      toast.success("¡Correo enviado con éxito!");
-      formRef.current?.reset();
-    })
-    .catch(() => {
-      toast.error("Error al enviar el correo, intentelo mas tarde.");
-    });
+if (!formRef.current) return;
+
+  toast.promise(
+    emailjs.sendForm(serviceID, templateID, formRef.current, publicKey),
+    {
+      pending: 'Enviando correo...',
+      success: '¡Correo enviado con éxito!',
+      error: 'Error al enviar el correo, inténtelo más tarde.'
+    }
+  ).finally(() => {
+    button.disabled = false
+    formRef.current?.reset();
+  });
 }

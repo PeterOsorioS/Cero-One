@@ -104,7 +104,7 @@ export function Contact() {
                     required
                   ></textarea>
                 </div>
-                <Button variant="semi-rounded" color="white" className="lg:flex items-start">
+                <Button id='boton' variant="semi-rounded" color="white" className="lg:flex items-start">
                   Enviar Mensaje
                 </Button>
               </form>
