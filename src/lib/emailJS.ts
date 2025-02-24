@@ -11,9 +11,9 @@ export function sendEmail(e: FormEvent<HTMLFormElement>, formRef: RefObject<HTML
   button.disabled = true;
 
 
-  const serviceID = import.meta.env.EMAILJS_SERVICE_ID;
-  const templateID = import.meta.env.EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 if (!formRef.current) return;
 
