@@ -1,8 +1,8 @@
 const team = [
-  { name: "Peter Osorio", role: "Desarrollador", image: "/papi.png" },
-  { name: "Octavio Reyna", role: "CEO", image: "/octa.png" },
-  { name: "Gabriel Cervantes", role: "Desarrollador", image: "/gaby.png" },
-  { name: "Noel Moreno", role: "Desarrollador", image: "/Noel2.png" },
+  { name: "Peter Osorio", role: "Desarrollador", image: "/Peter.png" },
+  { name: "Octavio Reyna", role: "CEO & Desarrollador", image: "/Octavio.png" },
+  { name: "Gabriel Cervantes", role: "Desarrollador", image: "/Gabriel.png" },
+  { name: "Noel Moreno", role: "Desarrollador", image: "/Rodolfo.png" },
   { name: "Javier Blanco", role: "Desarrollador", image: "/Noel.png" },
 
 ];
@@ -16,7 +16,7 @@ export function Team() {
           dispuestos a dar lo mejor de sí en cada proyecto.
         </p>
 
-        <div className="relative lg:w-3xl mx-auto overflow-hidden">
+        <div className="relative lg:w-4xl mx-auto overflow-hidden">
           <div className="slide-track">
             {[...team, ...team].map((member, index) => (
               <div
