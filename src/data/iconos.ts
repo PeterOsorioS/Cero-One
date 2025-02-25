@@ -10,16 +10,16 @@ export const icons_tech: icon[] = [
 
   // 🔹 Frameworks y Librerías Frontend
   { name: "React", image: "/icons/React.svg" },
-  { name: "Vue.js", image: "/icons/VueJs.svg" },
+  { name: "Vue", image: "/icons/VueJs.svg" },
   { name: "Angular", image: "/icons/Angular.svg" },
   { name: "Blazor", image: "/icons/Blazor.svg" },
   { name: "TailwindCSS", image: "/icons/TailwindCSS.svg" },
   { name: "Bootstrap", image: "/icons/Bootstrap5.svg" },
 
   // 🔹 Backend y Frameworks de Desarrollo
-  { name: ".NET", image: "/icons/.NET.svg" },
+  { name: "DotNet", image: "/icons/.NET.svg" },
   { name: "Django", image: "/icons/Django.svg" },
-  { name: "Node.js", image: "/icons/Nodejs.svg" },
+  { name: "Node", image: "/icons/Nodejs.svg" },
 
   // 🔹 Bases de Datos
   { name: "MongoDB", image: "/icons/MongoDB.svg" },

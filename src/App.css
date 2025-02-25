@@ -7,44 +7,6 @@
 }
 
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -80,3 +42,23 @@
 .slide-track:hover {
   animation-play-state: paused; /* Pausa la animación al pasar el mouse */
 }
+.shadow-java:hover { filter: drop-shadow(0 0 2em #f89820); }
+.shadow-python:hover { filter: drop-shadow(0 0 2em #3776AB); }
+.shadow-javascript:hover { filter: drop-shadow(0 0 2em #F7DF1E); }
+.shadow-typescript:hover { filter: drop-shadow(0 0 2em #3178C6); }
+.shadow-kotlin:hover { filter: drop-shadow(0 0 2em #A97BFF); }
+.shadow-react:hover { filter: drop-shadow(0 0 2em #61DAFB); }
+.shadow-vue:hover { filter: drop-shadow(0 0 2em #42b883); }
+.shadow-angular:hover { filter: drop-shadow(0 0 2em #DD0031); }
+.shadow-blazor:hover { filter: drop-shadow(0 0 2em #512BD4); }
+.shadow-tailwindcss:hover { filter: drop-shadow(0 0 2em #06B6D4); }
+.shadow-bootstrap:hover { filter: drop-shadow(0 0 2em #7952B3); }
+.shadow-dotnet:hover { filter: drop-shadow(0 0 2em #512BD4); }
+.shadow-django:hover { filter: drop-shadow(0 0 2em #178e61); }
+.shadow-node:hover { filter: drop-shadow(0 0 2em #68A063); }
+.shadow-mongodb:hover { filter: drop-shadow(0 0 2em #47A248); }
+.shadow-mariadb:hover { filter: drop-shadow(0 0 2em #1F305F); }
+.shadow-postgresql:hover { filter: drop-shadow(0 0 2em #336791); }
+.shadow-oracle:hover { filter: drop-shadow(0 0 2em #F80000); }
+.shadow-html5:hover { filter: drop-shadow(0 0 2em #E34F26); }
+.shadow-css3:hover { filter: drop-shadow(0 0 2em #1572B6); }
