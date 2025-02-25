@@ -2,8 +2,8 @@ const team = [
   { name: "Peter Osorio", role: "Desarrollador", image: "/Peter.png" },
   { name: "Octavio Reyna", role: "CEO & Desarrollador", image: "/Octavio.png" },
   { name: "Gabriel Cervantes", role: "Desarrollador", image: "/Gabriel.png" },
-  { name: "Noel Moreno", role: "Desarrollador", image: "/Rodolfo.png" },
-  { name: "Javier Blanco", role: "Desarrollador", image: "/Noel.png" },
+  { name: "Noel Moreno", role: "Desarrollador", image: "/Noel.png" },
+  { name: "Rodolfo Blanco", role: "Aprendiz Desarrollador", image: "/Rodolfo.png" },
 
 ];
 export function Team() {
