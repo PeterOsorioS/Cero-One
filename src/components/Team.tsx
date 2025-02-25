@@ -16,7 +16,7 @@ export function Team() {
           dispuestos a dar lo mejor de sí en cada proyecto.
         </p>
 
-        <div className="relative lg:w-4xl mx-auto overflow-hidden">
+        <div className="relative lg:w-5xl mx-auto overflow-hidden">
           <div className="slide-track">
             {[...team, ...team].map((member, index) => (
               <div
