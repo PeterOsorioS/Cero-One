@@ -8,6 +8,7 @@ import { CheckCircle } from "lucide-react";
 export function ServicePlans() {
   const settings = {
     dots: true,
+    dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 200,
     autoplay: true,

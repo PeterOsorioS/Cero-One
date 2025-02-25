@@ -62,3 +62,11 @@
 .shadow-oracle:hover { filter: drop-shadow(0 0 2em #F80000); }
 .shadow-html5:hover { filter: drop-shadow(0 0 2em #E34F26); }
 .shadow-css3:hover { filter: drop-shadow(0 0 2em #1572B6); }
+
+.custom-dots li button:before {
+  color: red !important;
+}
+
+.custom-dots li.slick-active button:before {
+  color: white !important;
+}
