@@ -9,7 +9,7 @@ export function ServicePlans() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     autoplay: true,
     autoplaySpeed: 2500,
     pauseOnHover: true,

@@ -5,6 +5,7 @@ export function TechStack() {
   
   const [isDesktop, setIsDesktop] = useState(false);
 
+
   useEffect(() => {
 
     const handleResize = () => {
@@ -26,12 +27,12 @@ export function TechStack() {
             {icons_tech.map((tech, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-center justify-center group"
+                className="relative flex flex-col items-center justify-center group "
               >
                 <img
                   src={tech.image || "/placeholder.svg"}
                   alt={tech.name}
-                  className="h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity duration-200"
+                  className={`h-20 w-auto duration-200 will-change-[filter] transition-[filter] group-hover:filter shadow-${tech.name.toLowerCase()}`}
                 />
                 <p className="absolute bottom-[-2rem] text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {tech.name}
