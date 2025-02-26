@@ -3,7 +3,7 @@ const team = [
   { name: "Octavio Reyna", role: "CEO & Desarrollador", image: "/Octavio.png" },
   { name: "Gabriel Cervantes", role: "Desarrollador", image: "/Gabriel.png" },
   { name: "Noel Moreno", role: "Desarrollador", image: "/Noel.png" },
-  { name: "Rodolfo Blanco", role: "Aprendiz Desarrollador", image: "/Rodolfo.png" },
+  { name: "Rodolfo Romero", role: "Aprendiz Desarrollador", image: "/Rodolfo.jpg" },
 
 ];
 export function Team() {
