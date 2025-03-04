@@ -3,7 +3,7 @@ import { CodeXml, Smartphone, Database, Server, Cloud, Laptop  } from "lucide-re
 const services = [
   {
     icon: <CodeXml className="w-10 h-10" />,
-    title: "Desarrollo web",
+    title: "Desarrollo Web",
     description: "Creamos sitios web modernos y responsivos utilizando las últimas tecnologías.",
   },
   {
@@ -23,7 +23,7 @@ const services = [
   },
   {
     icon: <Database className="w-10 h-10" />,
-    title: "Bases de datos",
+    title: "Bases de Datos",
     description: "Diseño e implementación de bases de datos eficientes.",
   },
   {

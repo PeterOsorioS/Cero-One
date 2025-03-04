@@ -34,7 +34,7 @@ export function ServicePlans() {
   };
 
   return (
-    <section id="Servicios" className="lg:px-20 mx-auto py-10">
+    <section id="Planes" className="lg:px-20 mx-auto py-10">
       <h4 className="text-white font-bold text-3xl pb-10 text-center">
         Nuestros Planes
       </h4>

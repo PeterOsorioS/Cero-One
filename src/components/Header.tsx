@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { Button } from "./ui/Button"
 
@@ -26,15 +24,16 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8 justify-center content-center">
-            <a href="#" className="text-white border-b-2 border-[#E63946] w-16 hover:text-[#E63946] transition-colors">
+            <a href="#" className="text-white  hover:text-[#E63946] transition-colors">
               Inicio
+            </a>
+            <a href="#Planes" className="text-white hover:text-red-500 w-16 transition-colors">
+              Planes
             </a>
             <a href="#Nosotros" className="text-white hover:text-red-500 w-16 transition-colors">
               Nosotros
             </a>
-            <a href="#Servicios" className="text-white hover:text-red-500 w-16 transition-colors">
-              Servicios
-            </a>
+
           </div>
           <a href="#Contacto">
             <Button className="hidden md:flex" variant="rounded" color="red">Contáctanos</Button>
@@ -59,12 +58,13 @@ export function Header() {
               <a href="#" className="text-white hover:text-red-500 transition-colors">
                 Inicio
               </a>
+              <a href="#Planes" className="text-white hover:text-red-500 w-16 transition-colors">
+                Planes
+              </a>
               <a href="#Nosotros" className="text-white hover:text-red-500 transition-colors">
                 Nosotros
               </a>
-              <a href="#Servicios" className="text-white hover:text-red-500 transition-colors">
-                Servicios
-              </a>
+
               <a href="#Contacto" className="md:hidden flex justify-center">
                 <Button variant="rounded" color="red">Contáctanos</Button>
               </a>
